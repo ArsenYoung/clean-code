@@ -46,13 +46,13 @@ body {
 }
 
 ul {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 
 input,
 button {
-    outline:none;
+    outline: none;
 }
 
 .button-template {
@@ -79,7 +79,7 @@ button {
     padding: 30px 0 10px;
     margin: 0;
     text-transform: uppercase;
-    list-style:none;
+    list-style: none;
 }
 
 input[type="text"] {
@@ -87,7 +87,7 @@ input[type="text"] {
     font-size: 18px;
     line-height: 18px;
     height: 21px;
-    padding: 0 9px;
+    padding: 0px 9px;
     border: 1px solid #ddd;
     background: #FFF;
     border-radius: 6px;
@@ -123,7 +123,7 @@ input[type="text"]:focus {
 }
 
 .task-items-container__tasks-list__item > input[type="checkbox"] {
-    margin: 0 10px;
+    margin: 0px 10px;
 }
 
 .task-items-container__tasks-list__item > label {
@@ -157,14 +157,14 @@ input[type="text"]:focus {
 /* Edit Task */
 
 .task-items-container__tasks-list__item input[type="text"] {
-    display:none
+    display: none;
 }
 
 .task-items-container__tasks-list__item.editMode input[type="text"] {
-    display:inline-block;
-    width:224px
+    display: inline-block;
+    width: 224px
 }
 
 .task-items-container__tasks-list__item.editMode .task-items-container__tasks-list__item__task-description {
-    display:none;
+    display: none;
 }
