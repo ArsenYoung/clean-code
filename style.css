@@ -162,7 +162,7 @@ input[type="text"]:focus {
 
 .task-items-container__tasks-list__item.editMode input[type="text"] {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 .task-items-container__tasks-list__item.editMode .task-items-container__tasks-list__item__task-description {
