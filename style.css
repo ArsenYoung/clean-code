@@ -106,6 +106,7 @@ input[type="text"]:focus {
 }
 
 /* Task list */
+
 .task-items-container__tasks-list__item {
     overflow: hidden;
     padding: 20px 0;
