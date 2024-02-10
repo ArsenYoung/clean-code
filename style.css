@@ -21,7 +21,8 @@ body {
 }
 
 @media (max-width:768px) {
-    .information-container { text-align: center;
+    .information-container { 
+        text-align: center;
     }
 }
 
@@ -93,6 +94,7 @@ input[type="text"] {
     font-family: Lato, sans-serif;
     color: #888;
 }
+
 input[type="text"]:focus {
     color: #333;
 }
@@ -130,25 +132,30 @@ input[type="text"]:focus {
     font-size: 18px;
     width: 226px;
 }
+
 .task-items-container__tasks-list__item > input[type="text"] {
-    width: 226px
+    width: 226px;
 }
+
 .task-items-container__tasks-list__item__button-delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
+
 .task-items-container__tasks-list__item__button-delete img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
+
 #completed-tasks-list .task-items-container__tasks-list__item__task-description {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
+
 .task-items-container__tasks-list__item input[type="text"] {
     display:none
 }
