@@ -12,7 +12,7 @@ body {
     text-align: right;
 }
 
-.information-container img {
+.information-container__img {
     width: 100%;
 }
 
@@ -67,7 +67,7 @@ body {
 
 /* Heading */
 
-.heading-template {
+.task-items-container__heading-template {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -78,7 +78,8 @@ body {
     list-style: none;
 }
 
-.task {
+.task-items-container__tasks-list__item__task {
+    display: none;
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -93,7 +94,7 @@ body {
     outline: none;
 }
 
-.task:focus {
+.task-items-container__tasks-list__item__task:focus {
     color: #333;
 }
 
@@ -124,29 +125,29 @@ body {
     vertical-align: middle;
 }
 
-.task-items-container__tasks-list__item > .checkbox {
+.task-items-container__tasks-list__item__checkbox {
     margin: 0px 10px;
     outline: none;
 }
 
-.task-items-container__tasks-list__item > label {
+.task-items-container__tasks-list__item__task-description {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-.task-items-container__tasks-list__item > .task {
+.task-items-container__tasks-list__item__task {
     width: 226px;
 }
 
-.task-items-container__tasks-list__item__button-delete img {
+.task-items-container__tasks-list__item__button-delete__img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-.task-items-container__tasks-list__item__button-delete img:hover {
+.task-items-container__tasks-list__item__button-delete__img:hover {
     transform: rotateZ(0);
 }
 
@@ -159,15 +160,11 @@ body {
 
 /* Edit Task */
 
-.task-items-container__tasks-list__item > .task {
-    display: none;
-}
-
-.task-items-container__tasks-list__item.editMode > .task {
+.task-items-container__tasks-list__item__task_edit-mode {
     display: inline-block;
     width: 224px;
 }
 
-.task-items-container__tasks-list__item.editMode .task-items-container__tasks-list__item__task-description {
+.task-items-container__tasks-list__item__task-description_edit-mode {
     display: none;
 }

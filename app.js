@@ -10,8 +10,8 @@
 
 var taskInput=document.querySelector(".task-items-container__create-task-container__input");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.querySelector(".task-items-container__tasks-list.incompleted");//ul of #incompleteTasksList
-var completedTasksHolder=document.querySelector(".task-items-container__tasks-list.completed");//completed-tasks
+var incompleteTaskHolder=document.querySelector(".task-items-container__tasks-list_incompleted");//ul of #incompleteTasksList
+var completedTasksHolder=document.querySelector(".task-items-container__tasks-list_completed");//completed-tasks
 
 
 //New task list item

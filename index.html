@@ -6,45 +6,45 @@
 </head>
 <body>
     <section class="information-container">
-        <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
+        <img class="information-container__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
         <a class="information-container__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </section>
     <section class="task-items-container">
-        <h3 class="heading-template">Add Item</h3>
+        <h3 class="task-items-container__heading-template">Add Item</h3>
         <div class="task-items-container__create-task-container">
             <input class="task-items-container__create-task-container__input" type="text">
             <button class="button-template">Add</button>
         </div>
-        <h3 class="heading-template">Todo</h3>
-        <ul class="task-items-container__tasks-list incompleted">
+        <h3 class="task-items-container__heading-template">Todo</h3>
+        <ul class="task-items-container__tasks-list task-items-container__tasks-list_incompleted">
             <li class="task-items-container__tasks-list__item">
-                <input class="checkbox" type="checkbox">
+                <input class="task-items-container__tasks-list__item__checkbox" type="checkbox">
                 <label class="task-items-container__tasks-list__item__task-description">Pay Bills</label>
-                <input type="text" class="task">
+                <input class="task-items-container__tasks-list__item__task" type="text">
                 <button class="task-items-container__tasks-list__item__button-edit button-template">Edit</button>
                 <button class="task-items-container__tasks-list__item__button-delete button-template">
-                    <img src="./remove.svg" alt="Remove button">
+                    <img class="task-items-container__tasks-list__item__button-delete__img" src="./remove.svg" alt="Remove button">
                 </button>
             </li>
-            <li class="task-items-container__tasks-list__item editMode">
-                <input class="checkbox" type="checkbox">
-                <label class="task-items-container__tasks-list__item__task-description">Go Shopping</label>
-                <input type="text" value="Go Shopping" class="task">
+            <li class="task-items-container__tasks-list__item task-items-container__tasks-list_incompleted">
+                <input class="task-items-container__tasks-list__item__checkbox" type="checkbox">
+                <label class="task-items-container__tasks-list__item__task-description task-items-container__tasks-list__item__task-description_edit-mode">Go Shopping</label>
+                <input class="task-items-container__tasks-list__item__task task-items-container__tasks-list__item__task_edit-mode" type="text" value="Go Shopping">
                 <button class="task-items-container__tasks-list__item__button-edit button-template">Save</button>
                 <button class="task-items-container__tasks-list__item__button-delete button-template">
-                    <img src="./remove.svg" alt="Remove button">
+                    <img class="task-items-container__tasks-list__item__button-delete__img" src="./remove.svg" alt="Remove button">
                 </button>
             </li>
         </ul>
-        <h3 class="heading-template">Completed</h3>
-        <ul class="task-items-container__tasks-list completed">
+        <h3 class="task-items-container__heading-template">Completed</h3>
+        <ul class="task-items-container__tasks-list task-items-container__tasks-list_completed">
             <li class="task-items-container__tasks-list__item">
-                <input class="checkbox" type="checkbox" checked>
+                <input class="task-items-container__tasks-list__item__checkbox" type="checkbox" checked>
                 <label class="task-items-container__tasks-list__item__task-description completed">See the Doctor</label>
-                <input type="text" class="task">
+                <input class="task-items-container__tasks-list__item__task" type="text">
                 <button class="task-items-container__tasks-list__item__button-edit button-template">Edit</button>
                 <button class="task-items-container__tasks-list__item__button-delete button-template">
-                    <img src="./remove.svg" alt="Remove button">
+                    <img class="task-items-container__tasks-list__item__button-delete__img" src="./remove.svg" alt="Remove button">
                 </button>
             </li>
         </ul>
