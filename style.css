@@ -150,7 +150,7 @@ input[type="text"]:focus {
 
 /* Completed */
 
-#completed-tasks-list .task-items-container__tasks-list__item__task-description {
+.task-items-container__tasks-list__item__task-description.completed {
     text-decoration: line-through;
     color: #888;
 }
