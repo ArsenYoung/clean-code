@@ -72,17 +72,16 @@ var addTask = function(){
 
 //Edit an existing task.
 
-var editTask=function(){
+var editTask = function(){
     console.log("Edit Task...");
     console.log("Change 'edit' to 'save'");
 
-
     var listItem = this.parentNode;
 
-    var editInput = listItem.querySelector('input[type=text]');
-    var label = listItem.querySelector("label");
+    var editInput = listItem.querySelector(".task-items-container__tasks-list__item__task");
+    var label = listItem.querySelector(".task-items-container__tasks-list__item__task-description");
     var editBtn = listItem.querySelector(".task-items-container__tasks-list__item__button-edit");
-    var containsClass = listItem.classList.contains("editMode");
+    var containsClass = editInput.classList.contains("task-items-container__tasks-list__item__task_edit-mode");
     
     if(containsClass) {
         //switch to .editmode
@@ -91,10 +90,12 @@ var editTask=function(){
         editBtn.innerText = "Edit";
     } else {
         editInput.value = label.innerText;
+        label.innerText = "";
         editBtn.innerText="Save";
     }
 
-    listItem.classList.toggle("editMode");
+    label.classList.toggle("task-items-container__tasks-list__item__task-description_edit-mode");
+    editInput.classList.toggle("task-items-container__tasks-list__item__task_edit-mode");
 };
 
 
