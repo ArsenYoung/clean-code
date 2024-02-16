@@ -10,8 +10,8 @@
 
 var taskInput = document.querySelector(".task-items-container__create-task-container__input");
 var addButton = document.getElementsByTagName("button")[0];
-var incompleteTaskHolder = document.querySelector(".task-items-container__tasks-list_incompleted");
-var completedTasksHolder = document.querySelector(".task-items-container__tasks-list_completed");
+var incompleteTaskHolder = document.querySelector(".task-items-container__tasks-list");
+var completedTasksHolder = document.querySelector(".task-items-container__tasks-list.task-items-container__tasks-list_completed");
 
 
 //New task list item
@@ -118,9 +118,7 @@ var taskCompleted = function(){
     var listItem = this.parentNode;
     var taskDescription = listItem.querySelector('.task-items-container__tasks-list__item__task-description');
 
-    listItem.classList.toggle("task-items-container__tasks-list_incompleted");
     listItem.classList.toggle("task-items-container__tasks-list_completed");
-    taskDescription.classList.toggle("task-items-container__tasks-list__item__task-description_incompleted");
     taskDescription.classList.toggle("task-items-container__tasks-list__item__task-description_completed");
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
@@ -135,7 +133,6 @@ var taskIncomplete = function(){
     var listItem = this.parentNode;
     var taskDescription = listItem.querySelector('.task-items-container__tasks-list__item__task-description');
 
-    listItem.classList.toggle("task-items-container__tasks-list_incompleted");
     taskDescription.classList.toggle("task-items-container__tasks-list__item__task-description_completed");
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskCompleted);
