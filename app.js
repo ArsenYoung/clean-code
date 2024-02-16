@@ -42,7 +42,7 @@ var createNewTaskElement = function(taskString){
 
     deleteButton.className = "task-items-container__tasks-list__item__button-delete button-template";
     deleteButtonImg.className = "task-items-container__tasks-list__item__button-delete__img";
-    deleteButtonImg.src = './remove.svg';
+    deleteButtonImg.src = "./remove.svg";
     deleteButton.appendChild(deleteButtonImg);
 
     //and appending.
@@ -116,7 +116,7 @@ var taskCompleted = function(){
 
     //Append the task list item to the #completed-tasks
     var listItem = this.parentNode;
-    var taskDescription = listItem.querySelector('.task-items-container__tasks-list__item__task-description');
+    var taskDescription = listItem.querySelector(".task-items-container__tasks-list__item__task-description");
 
     listItem.classList.toggle("task-items-container__tasks-list_completed");
     taskDescription.classList.toggle("task-items-container__tasks-list__item__task-description_completed");
@@ -131,7 +131,7 @@ var taskIncomplete = function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasksList.
     var listItem = this.parentNode;
-    var taskDescription = listItem.querySelector('.task-items-container__tasks-list__item__task-description');
+    var taskDescription = listItem.querySelector(".task-items-container__tasks-list__item__task-description");
 
     taskDescription.classList.toggle("task-items-container__tasks-list__item__task-description_completed");
     incompleteTaskHolder.appendChild(listItem);
