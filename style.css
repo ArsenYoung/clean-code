@@ -105,6 +105,14 @@ body {
     border: 1px solid #ddd;
     border-radius: 6px;
     outline: none;
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 21px;
+    padding: 0 9px;
+    background: #fff;
+    font-family: Lato, sans-serif;
+    color: #888;
 }
 
 /* Task list */
