@@ -127,6 +127,10 @@ var taskIncomplete = function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasksList.
     var listItem = this.parentNode;
+    var taskDescription = listItem.querySelector('.task-items-container__tasks-list__item__task-description');
+
+    listItem.classList.toggle("task-items-container__tasks-list_incompleted");
+    taskDescription.classList.toggle("task-items-container__tasks-list__item__task-description_completed");
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskCompleted);
 }

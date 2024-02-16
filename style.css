@@ -161,7 +161,7 @@ body {
 
 /* Completed */
 
-.task-items-container__tasks-list__item__task-description.completed {
+.task-items-container__tasks-list__item__task-description_completed {
     text-decoration: line-through;
     color: #888;
 }
