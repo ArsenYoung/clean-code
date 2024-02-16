@@ -116,6 +116,12 @@ var taskCompleted = function(){
 
     //Append the task list item to the #completed-tasks
     var listItem = this.parentNode;
+    var taskDescription = listItem.querySelector('.task-items-container__tasks-list__item__task-description');
+
+    listItem.classList.toggle("task-items-container__tasks-list_incompleted");
+    listItem.classList.toggle("task-items-container__tasks-list_completed");
+    taskDescription.classList.toggle("task-items-container__tasks-list__item__task-description_incompleted");
+    taskDescription.classList.toggle("task-items-container__tasks-list__item__task-description_completed");
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 }
